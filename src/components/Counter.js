@@ -1,11 +1,14 @@
 import { useState } from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [click, setCount] = useState(0);
+
   return (
     <div>
-      <p>Button clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Clike me</button>
+        <p>
+      <p>Button clicked ${click} times</p>
+      <button onClick={() => setCount(click + 1)}>Clike me</button>
+      </p>
     </div>
   );
 };
